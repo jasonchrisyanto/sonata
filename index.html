@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- untuk judul yang dibagian link -->
     <title>Universitas MDP</title>
 </head>
+
 <body>
     <!-- Heading -->
+    <!-- tulisan terbesar -->
     <h1>Universitas MDP</h1>
+
     <!-- beyond gai -->
+
+    <!-- buat link -->
+    <hr>
+    <a href="daftar.html">Daftar</a>
+    <hr>
+
+    <!-- paragraf -->
     <p>Universitas MDP merupakan Universitas Unggulan di kota Palembang</p>
 
     <h2>Fakultas</h2>
     <!-- order list -->
+    <!-- untuk memberi tanda pada awalan -->
     <ol type="A">
         <li>Fakultas Ilmu Komputer dan Rekayasa</li>
         <li>Fakultas Ekonomi dan Bisnis</li>
@@ -20,7 +33,7 @@
     <h2>Program Studi</h2>
 
     <!-- unorder list -->
-    <ul> 
+    <ul>
         <li>Informatika</li>
         <li>Sistem Informatika</li>
         <li>Manajemen Informatika</li>
@@ -35,11 +48,14 @@
         <!-- baris <tr> -->
         <tr>
             <!-- kolom <th> / <td> -->
-                <th>Nama Dosen</th>
-                <th>Foto</th>
-                <th>Pendidikan</th>
-                <th>Prodi</th>
-                <th>Email</th>
+            <!-- th itu untuk buat atas ke bawah -->
+            <!-- td itu untuk kiri ke kanan -->
+            <!-- th itu untuk kiri ke kanan tapi di bold -->
+            <th>Nama Dosen</th>
+            <th>Foto</th>
+            <th>Pendidikan</th>
+            <th>Prodi</th>
+            <th>Email</th>
         </tr>
         <tr>
             <td>Ahmad</td>
@@ -50,14 +66,78 @@
         </tr>
         <tr>
             <td>Lusi</td>
-            <td><img src="img/cute_cartoon_customized_digita_1677231592_cfb27aed_progressive.jpg" alt="Lusi" width="150px"> </td>
+            <td><img src="img/cute_cartoon_customized_digita_1677231592_cfb27aed_progressive.jpg" alt="Lusi"
+                    width="150px"> </td>
             <td>S3 Universitas Indonesia</td>
             <td>Informatika</td>
             <td>lusihujaya@gmail.com</td>
         </tr>
     </table>
 
+    <!-- colspan -->
+    <!-- untuk menggabungkan tabel kiri sama kanan -->
+    <table border="1">
+        <tr>
+            <td colspan="2">R1 C1 C2</td>
+        </tr>
+        <tr>
+            <td>R2 C1</td>
+            <td>R2 C2</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- rowspan -->
+    <!-- untuk menggabungkan tabel atas sama bawah -->
+    <table border="1">
+        <tr>
+            <td rowspan="2">R1 C1</td>
+            <td>R1 C2</td>
+        </tr>
+        <tr>
+            <td>R2 C2</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- latihan buat tabel sendiri -->
+    <table border="1">
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Fakultas</th>
+            <th rowspan="2">Prodi</th>
+            <th colspan="2">Mahasiswa</th>
+            <th colspan="2">Kelas</th>
+        </tr>
+        <tr>
+            <th>Laki</th>
+            <th>Perempuan</th>
+            <th>Pagi</th>
+            <th>Sore</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>FIKR</td>
+            <td>Informatika</td>
+            <td>400</td>
+            <td>300</td>
+            <td>350</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>FIKR</td>
+            <td>Sistem Informasi</td>
+            <td>500</td>
+            <td>400</td>
+            <td>450</td>
+            <td>450</td>
+        </tr>
+    </table>
+
+    <!-- untuk membuat copyright -->
     <hr>
     &copy; 2024 Pemrograman Web I
 </body>
+
 </html>
