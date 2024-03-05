@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 /* element selector */
 
 /* untuk kombinasi warna */
@@ -6,11 +11,46 @@ body {
     background-color:  #8e7ab5;
 }
 
-/* class selector */
-.col {
-    width: 25%;
-    background-color: yellow;
-    float: left;
+/* css tablet */
+@media screen and (min-width:600px) {
+    body {
+        background-color:black;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+        float: left;
+        padding: 10px;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+        float: left;
+    }
+    
+}
+
+/* css desktop */
+@media screen and (min-width:992px) {
+    body {
+        background-color: aquamarine;
+    }
+    .col-lg-3{
+        width: 25%;
+        background-color: #808080;
+        float: left;
+    }
+    .col-lg-4{
+        width: 33.33%;
+        background-color: yellow;
+        float: left;
+    }
+    .col-lg-6 {
+        width: 50%;
+        background-color: azure;
+        float: left;
+        padding: 10px;
+    }
 }
 
 .img-responsive {
@@ -22,14 +62,32 @@ body {
 }
 
 .bg-primary {
-    background-color: #fdf0d1;
+    background-color: crimson;
 }
 
 .rounded {
     border-radius: 20px;
 }
 
-.img-rounded {
-    /* top-left top-right bottom-right bottom-left */
-    border-radius: 50% 50% 0 0;
+.img-rounded{
+/* top-left  top-right bottom-right bottom-left */
+border-radius: 50% 50% 0 0;
+}
+
+.img-rounded2{
+    border-radius: 15% 15% 15% 15%;
+}
+
+.mb-5{
+    margin-bottom: 150px;
+}
+
+.mt-5{
+    margin-top: 150px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
 }
